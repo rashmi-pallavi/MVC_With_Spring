@@ -1,0 +1,56 @@
+LoanApplication class
+
+public class LoanApplication {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Enter total no of customers:");
+		int n = s.nextInt();
+		Customer[] c = new Customer[n];
+		
+		for(int i=0;i<n;i++){
+		System.out.println("Enter customer's name: ");
+		String custName = s.next();
+		c[i].setCustName(custName);
+		System.out.println("Customer's name is:"+c[i].getCustName());
+		
+		System.out.println("Enter customer's contact: ");
+		int custContact = s.nextInt();
+		c[i].setCustContact(custContact);
+		System.out.println("Customer's contact is:"+c[i].getCustContact());
+		
+		System.out.println("Enter customer's age: ");
+		int age = s.nextInt();
+		c[i].setAge(age);
+		System.out.println("Customer's age is:"+c[i].getAge());
+		} 
+		
+		//For Personal Loan
+		PersonalLoan pl = new PersonalLoan();
+		System.out.println("Enter customer's salary");
+		int custSalary = s.nextInt();
+		pl.setCustSalary(custSalary);
+		int loanGiven = pl.calculateLoanAmt(custSalary);
+		System.out.println("The loan given for personal loan is: " +loanGiven);
+		int interestRate = pl.calculateInterestRate(loanGiven);
+		System.out.println("The interest rate for personal loan is: " +interestRate);
+		
+		//For Jewel Loan
+		JewelLoan jl = new JewelLoan();
+		System.out.println("Enter the jewel quantity");
+		int jewelQuantity = s.nextInt();
+		jl.setJewelQuantity(jewelQuantity);
+		int loanGiven1 = jl.calculateLoanAmt(jewelQuantity);
+		System.out.println("The loan given for jewel loan is: " +loanGiven1);
+		int interestRate1 = jl.calculateInterestRate(jewelQuantity);
+		System.out.println("The interest rate for jewel loan is: " +interestRate1);
+		
+		
+		
+		
+	}
+}
+
+

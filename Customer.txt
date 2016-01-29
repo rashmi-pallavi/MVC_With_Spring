@@ -1,0 +1,70 @@
+Customer Class
+
+public class Customer {
+
+	private String custName;
+	private int custContact;
+	private int age;
+	
+	
+	/**
+	 * 
+	 */
+	public Customer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	
+	/**
+	 * @param custName
+	 * @param custContact
+	 * @param age
+	 */
+	public Customer(String custName, int custContact, int age) {
+		super();
+		this.custName = custName;
+		this.custContact = custContact;
+		this.age = age;
+	}
+	
+	
+	/**
+	 * @return Returns the age.
+	 */
+	public int getAge() {
+		return age;
+	}
+	/**
+	 * @param age The age to set.
+	 */
+	public void setAge(int age) {
+		this.age = age;
+	}
+	/**
+	 * @return Returns the custContact.
+	 */
+	public int getCustContact() {
+		return custContact;
+	}
+	/**
+	 * @param custContact The custContact to set.
+	 */
+	public void setCustContact(int custContact) {
+		this.custContact = custContact;
+	}
+	/**
+	 * @return Returns the custName.
+	 */
+	public String getCustName() {
+		return custName;
+	}
+	/**
+	 * @param custName The custName to set.
+	 */
+	public void setCustName(String custName) {
+		this.custName = custName;
+	}
+}

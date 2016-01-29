@@ -1,0 +1,98 @@
+Loan Class
+
+public class Loan {
+	
+	int loanGiven;
+	int interestRate;
+	
+	public int calculateLoanAmt(){
+		return 0;
+	}
+	
+	public int calculateInterestRate(){
+		
+		return 0;
+	}
+}
+
+class PersonalLoan extends Loan{
+	
+	private int custSalary;
+	
+	//superclass constructor
+	public PersonalLoan() {
+		super();
+	}
+	
+	//Field Constructor
+	public PersonalLoan(int custSalary) {
+		super();
+		this.custSalary = custSalary;
+	}
+	
+	
+	public int getCustSalary() {
+		return custSalary;
+	}
+	
+	
+	public void setCustSalary(int custSalary) {
+		this.custSalary = custSalary;
+	}
+	
+	
+	public int calculateLoanAmt(int custSalary){
+		int loanGiven = 12*custSalary;
+		return loanGiven;
+	}
+	
+	public int calculateInterestRate(int loanAmt){
+		if(loanAmt<5000)
+			interestRate=14;
+		else if(loanAmt>5000)
+			interestRate=13;
+		return interestRate;
+	}
+	
+}
+
+
+class JewelLoan extends Loan{
+	
+	int jewelQuantity;
+		
+	//Superclass Constructor
+		public JewelLoan() {
+		super();
+		}
+	
+	//Field Constructor
+		public JewelLoan(int jewelQuantity) {
+		super();
+		this.jewelQuantity = jewelQuantity;
+	}
+		
+	
+	public int getJewelQuantity() {
+		return jewelQuantity;
+	}
+	
+	public void setJewelQuantity(int jewelQuantity) {
+		this.jewelQuantity = jewelQuantity;
+	}
+	
+	public int calculateLoanAmt(int jewelQuantity){
+		loanGiven = 2000 * jewelQuantity;
+		return loanGiven;
+		}
+	
+	public int calculateInterestRate(int jewelQuantity){
+		
+		if(jewelQuantity<100)
+			interestRate = 10;
+		else if(jewelQuantity>100)
+			interestRate = 11;
+		
+		return interestRate;
+	}
+}

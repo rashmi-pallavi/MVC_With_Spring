@@ -1,0 +1,46 @@
+LifeInsurance
+
+
+- policyNumber :long
+- policyHolderName:String
+- paymentMode :String
+- policyAmount:double
+
+
++ calculate:double
++ set/Get Methods
++ LifeInsurance()
++ LifeInsurance(4 args)
+
+==============================
+
+A Bank Provides Loan only to his customers 
+
+There are two different types of Loan like
+Personal Loan
+Jewel Loan
+
+
+The Interest is calculated differently for 
+each type of loan
+
+For Personal Loan   
+if Loanamount <50000  interest rate is 14% per annum
+if Loanamount >50000  interest rate is 13% per annum
+
+12 time the Salary of the customer is given as loan
+
+For Jewel Loan   
+if grams <100  interest rate is 10% per annum
+if grams >100  interest rate is 11% per annum
+
+Loan of Rs.2000/- per gram is given
+ 
+ 
+ The Application should take the Customer details and 
+ print the Eligible loan amount and print the Interest details
+ 
+ The Application Should print a Consolidated List 
+ of Loans taken by All the Customers
+ 
+ 
