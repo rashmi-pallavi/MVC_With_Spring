@@ -1,3 +1,0 @@
-Java , Schmidt , 101 , 500
-C++ , Mark , 102 , 250
-Python , Abc , 103 , 700

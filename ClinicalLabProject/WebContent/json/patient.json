@@ -1,0 +1,8 @@
+
+
+[
+{"pcode":"101" , "pname":"Ram" , "age":"26" , "hphone":"92348334" ,"email":"ram@gmail.com" },
+{"pcode":"102" , "pname":"Shyam" ,"age":"24" , "hphone":"99577232" ,"email":"shyam@gmail.com" },
+{"pcode":"103" , "pname":"Ramesh" ,"age":"22" , "hphone":"95646323" ,"email":"ramesh@gmail.com" },
+{"pcode":"104" , "pname":"Mannan" , "age":"20" , "hphone":"95634522" ,"email":"mannam@gmail.com" }
+]
