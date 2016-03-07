@@ -1,0 +1,8 @@
+
+
+[
+{"tcode": "101" , "tname":"Blood Test" , "amt":"800"},
+{"tcode": "102" , "tname":"RBC Test" , "amt":"800"},
+{"tcode": "103" , "tname":"WBC Test" , "amt":"800"},
+{"tcode": "104" , "tname":"Typhoid Test" , "amt":"800"}
+]
