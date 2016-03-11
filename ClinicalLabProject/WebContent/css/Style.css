@@ -2,30 +2,53 @@
 
 h1{
 	text-align: center;
-	background-color: yellow;
-	border: 12px solid yellow;
+	background-color: orange;
+	border: 20px solid orange;
 }
 
+h2{
+	text-align: center;
+}
 #footer{
 	text-align: center;	
-	background-color: yellow;
-	border: 12px solid yellow;
+	background-color: orange;
+	border: 20px solid orange;
+}
+
+#foot{
+	background-color: orange;
+	border: 20px solid orange;
 }
 
 #header2{
-	
 	background-color: green;
-	border: 12px solid green;
+	border: 20px solid green;
 }
 
 #lcode{
-	
 	text-align: right;
 	color: blue;
 }
 
-#tab2{
-	
+#tab1{
 	margin-left: auto;
 	margin-right: auto;
+	border-collapse: collapse;
+	border-color: red;
+	
+}
+
+#tab2{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border-color: red;
+}
+
+#tab3{
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border-color: red;
 }

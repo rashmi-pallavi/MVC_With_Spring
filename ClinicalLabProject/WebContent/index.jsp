@@ -13,8 +13,9 @@
 <hr>
 <%@ include file="header1.jsp" %>
 
+<br><br>
 <form method="post" action="ValidateUser.jsp">
-	<table border="1" >
+	<table border="1" id="tab1">
 		<tr>
 			<td><label>Role</label></td>
 			<td>

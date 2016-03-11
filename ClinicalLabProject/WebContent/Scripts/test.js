@@ -2,6 +2,7 @@
  * 
  */
 
+
 function testValues1(){
 
 var request = new XMLHttpRequest();
@@ -39,4 +40,4 @@ function addTest(){
 	cell3.innerHTML="<input type='text'>";
 } 
 
-$("button").click(testValues1());
+$("tcode1").click(testValues1());

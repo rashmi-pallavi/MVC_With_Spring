@@ -4,14 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link type="text/css" href="css/Style.css" rel="Stylesheet">
-<title>Footer</title>
+<title>Insert title here</title>
 </head>
 <body>
 
-<div id="foot">
-<center><a id="footer" href="#">Contact Administrator</a></center>
-</div>
+<b>One Book with following details added</b>
+
+<ol>
+	<li>${bookObj.bookNumber}</li>
+	<li>${bookObj.bookName}</li>
+	<li>${bookObj.code}</li>
+</ol>
 
 </body>
 </html>

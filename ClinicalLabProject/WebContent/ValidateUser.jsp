@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link type="css/text" href="css/Style.css" rel="Stylesheet">
 <title>Validate User</title>
+<script type="text/javascript" src="jslibs/jquery-1.12.1.js"></script>
 </head>
 <body>
 
@@ -79,26 +80,41 @@
 
 	</table>
 	
+	<br>
+	<h2>Test Details</h2>
 	
-	<table>
-	<tr>
-		<td id="tcode"><th>Test Code</th>
-		<td id="tname"><th>Test Name</th>
-		<td id="amt"><th>Amount</th>
-	</tr>
 	
-	<tr>
-		<td>
-		<datalist id="json-datalist"></datalist>
-		<input type="text"> 
-	</tr>
+	<table border="1" id="tab3">
+		<tr>
+			<td>Test Code
+			<td>Test Name
+			<td>Amount
+		</tr>
+	
+		<tr>
+			<td>
+			<input type="text" id="tcode1" onkeyup="testValues1()">
+			<td><input type="text" id="tname1">
+			<td><input type="text" id="amt1">
+		</tr>
+		
+		<tr>
+			<td colspan="2">Total
+			<td><input type="text">
+		</tr>
 		
 	</table>
 
 </form>
 
+<div align="center">
+	<input type="button" value="Add more test" onclick="addTest()">
+	<input type="button" value="Confirm Tests">
+</div>
+
 </body>
 
 <script type="text/javascript" src="Scripts/patient.js"></script>
 <script type="text/javascript" src="Scripts/doctor.js"></script>
+<script type="text/javascript" src="Scripts/test.js"></script>
 </html>
