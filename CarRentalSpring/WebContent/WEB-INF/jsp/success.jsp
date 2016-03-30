@@ -11,13 +11,13 @@
 <b>One Car with following details added</b>
 
 <ol>
-	<li>${carObj.name}</li>
-	<li>${carObj.mobileNumber}</li>
-	<li>${carObj.email}</li>
-	<li>${carObj.type}</li>
+	<li>${command.name}</li>
+	<li>${command.mobileNumber}</li>
+	<li>${command.email}</li>
+	<li>${command.type}</li>
 </ol>
 
-<section>
+<a href="showAll">Show all requests</a>
 <form action="cust/check">
 
 Please enter your name again
@@ -31,7 +31,7 @@ Please enter your name again
 <p>Previous Bookings</p>
 
 ${prevBooking}
-</section>
+
 
 </body>
 </html>

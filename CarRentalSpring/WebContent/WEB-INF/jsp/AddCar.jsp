@@ -9,7 +9,9 @@
 </head>
 <body>
 
-<form:form method="POST" action="CarEntry.htm">
+<form:form method="POST" action="CarEntry">
+
+<form:errors path="*" />
 
 <label>Name</label>
 <form:input path="name" />

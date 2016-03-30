@@ -2,9 +2,12 @@ package com.training.cntrls;
 
 
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -43,10 +46,17 @@ public class CarRentalController {
 		return new String[]{"Sedan NAC","Sedan AC","HatchBack AC","Luxury Car"};
 	}
 	
-	@RequestMapping(method=RequestMethod.POST)
-	public String onSubmit(@ModelAttribute("carObj") CarRental car)
+	@RequestMapping(name="/CarEntry" , method=RequestMethod.POST)
+	public String onSubmit(@Valid @ModelAttribute("command") CarRental car , BindingResult result)
 	{
-		return "success";
+		String nextStep="success";
+		
+		if(result.hasErrors())
+		{
+			nextStep="AddCar";
+		}
+		
+		return nextStep;
 	}
 	
 	@RequestMapping("cust/check")

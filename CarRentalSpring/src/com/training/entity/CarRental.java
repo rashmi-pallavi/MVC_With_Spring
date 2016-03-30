@@ -1,18 +1,29 @@
 package com.training.entity;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+
+import org.hibernate.validator.constraints.Email;
 import org.springframework.stereotype.Component;
 
 @Component
 public class CarRental {
 	
+	@javax.validation.constraints.NotNull
 	private String name;
+	
+	@Max(9999999999L)
+	@Min(1000000000L)
 	private long mobileNumber;
+	
+	@Email
 	private String email;
 	private String type;
 	public CarRental() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 	@Override
 	public String toString() {
 		return "CarRental [name=" + name + ", mobileNumber=" + mobileNumber + ", email=" + email + ", type=" + type
@@ -49,7 +60,6 @@ public class CarRental {
 		this.email = email;
 		this.type = type;
 	}
-	
 	
 
 }
